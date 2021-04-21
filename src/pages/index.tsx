@@ -70,8 +70,8 @@ const Home = () => {
                   }
                   locale={locale}
                   onChange={handleJson}
-                  width="400"
-                  height="300"
+                  width={400}
+                  height={300}
                 />
               ) : (
                 <textarea
