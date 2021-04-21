@@ -28,7 +28,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
 
   useEffect(() => {
     const storedTheme = Cookies.get('fastfeet/theme');
-    setTheme(storedTheme || 'light');
+    setTheme(storedTheme || 'dark');
   }, []);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <StyledComponentThemeProvider
-        theme={theme === 'dark' ? darkTheme : lightTheme}
+        theme={theme === 'light' ? lightTheme : darkTheme}
       >
         <GlobalStyles />
         {children}
