@@ -3,12 +3,12 @@ import {
   Container,
   Content,
   DarkSwitch,
-  InputJSON,
   LightSwitch,
   QR
 } from '@/styles/pages/Home';
 import Head from 'next/head';
 import { useContext, useMemo, useState } from 'react';
+import JSONInput from 'react-json-editor-ajrm';
 import locale from 'react-json-editor-ajrm/locale/pt';
 
 const Home = () => {
@@ -61,7 +61,7 @@ const Home = () => {
           <div>
             <main>
               {isJson ? (
-                <InputJSON
+                <JSONInput
                   placeholder={JsonSample}
                   theme={
                     theme === 'dark'
@@ -70,6 +70,8 @@ const Home = () => {
                   }
                   locale={locale}
                   onChange={handleJson}
+                  width="400"
+                  height="300"
                 />
               ) : (
                 <textarea

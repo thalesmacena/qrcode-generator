@@ -1,5 +1,4 @@
 import { MdBrightnessHigh, MdBrightnessLow } from 'react-icons/md';
-import JSONInput from 'react-json-editor-ajrm';
 import { QRCode } from 'react-qr-svg';
 import styled from 'styled-components';
 
@@ -99,11 +98,6 @@ export const DarkSwitch = styled(MdBrightnessLow)`
   cursor: pointer;
   color: ${({ theme }) => theme.colors.switch};
 `;
-
-export const InputJSON = styled(JSONInput).attrs(() => ({
-  height: 300,
-  width: 400
-}))``;
 
 export const QR = styled(QRCode).attrs((props) => ({
   bgColor: props.theme.colors.background,
