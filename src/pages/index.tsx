@@ -15,7 +15,9 @@ const Home = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [size] = useState<number>(250);
   const [isJson, setIsJson] = useState<boolean>(false);
-  const [content, setContent] = useState<string>('Teste');
+  const [content, setContent] = useState<string>(
+    'https://github.com/thalesmacena/qrcode-generator'
+  );
 
   const JsonSample = useMemo(() => {
     return {
