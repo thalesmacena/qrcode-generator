@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
+import { FormEventHandler } from 'react';
 import { Form } from './styles';
 
 interface IInputProps {
-  onChangeFunction: (event) => void;
+  onChangeFunction: FormEventHandler<HTMLFormElement>;
   defaultValue: string;
 }
 
