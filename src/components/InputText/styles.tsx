@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const ContainerInputText = styled.div`
+  display: flex;
+  justify-content: center;
   padding: 5px;
-  margin-bottom: 5px;
   height: 310px;
 
   textarea {
