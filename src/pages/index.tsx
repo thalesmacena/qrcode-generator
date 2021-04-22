@@ -1,7 +1,8 @@
 import Header from '@/components/Header';
+import InputLogo from '@/components/InputLogo';
 import InputRange from '@/components/InputRange';
 import InputText from '@/components/InputText/InputText';
-import { Container, Content, QR } from '@/styles/pages/Home';
+import { Container, Content, QR, QRSection } from '@/styles/pages/Home';
 import Head from 'next/head';
 import { useState } from 'react';
 
@@ -39,10 +40,11 @@ const Home = () => {
               defaultValue={option}
             />
           </div>
-          <section>
+          <QRSection>
             <h1>QR Code</h1>
             <QR level="Q" style={{ width: size }} value={content} />
-          </section>
+            <InputLogo name="logo" />
+          </QRSection>
         </Content>
       </Container>
     </>
