@@ -70,6 +70,6 @@ yarn start
 The application will run on [localhost:3000](http://localhost:3000/)
 
 ## 🏃 Next Steps
-- [] add logo to qrcode
-- [] add plain text formatter
-- [] add pix mode
+- [ ] add logo to qrcode
+- [ ] add plain text formatter
+- [ ] add pix mode
