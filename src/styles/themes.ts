@@ -5,6 +5,7 @@ export const lightTheme = {
     primary: '#1f2687',
     text: 'black',
     textInBackground: '#1F2687',
+    labelNotSelected: '#4a4f8a',
     switch: '#fff'
   },
   background:
@@ -21,6 +22,7 @@ export const darkTheme = {
     primary: '#1f1b24',
     text: '#fff',
     textInBackground: '#A56C47',
+    labelNotSelected: '#88593B',
     switch: '#057105'
   },
   background:

@@ -7,6 +7,7 @@ interface Theme {
     primary: string;
     text: string;
     textInBackground: string;
+    labelNotSelected: string;
     switch: string;
   };
   background: string;
