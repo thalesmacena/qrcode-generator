@@ -6,6 +6,10 @@ export const Form = styled.form`
   text-align: center;
   align-items: center;
 
+  @media (max-width: 720px) {
+    margin-bottom: 30px;
+  }
+
   input {
     appearance: none;
   }
