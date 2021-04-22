@@ -54,6 +54,7 @@ export const QRSection = styled.div`
     width: 80px;
     height: 80px;
     border: 3px solid #fff;
+    background-color: #fff;
 
     position: absolute;
     left: calc(300px / 2 - 40px);
