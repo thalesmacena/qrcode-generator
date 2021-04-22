@@ -1,4 +1,3 @@
-import { MdBrightnessHigh, MdBrightnessLow } from 'react-icons/md';
 import { QRCode } from 'react-qr-svg';
 import styled from 'styled-components';
 
@@ -20,17 +19,6 @@ export const Container = styled.div`
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-  }
-
-  strong {
-    font-size: 1.5rem;
-    color: ${({ theme }) => theme.colors.text};
-  }
 `;
 
 export const Content = styled.div`
@@ -41,39 +29,6 @@ export const Content = styled.div`
     flex-direction: column;
     padding: 10px 10px;
     margin: 30px 0;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  main {
-    padding: 5px;
-    margin-bottom: 5px;
-    height: 310px;
-  }
-
-  textarea {
-    width: 400px;
-    height: 300px;
-    border: none;
-    resize: none;
-    padding: 5px;
-    background: ${({ theme }) => theme.colors.inputBackground};
-    color: ${({ theme }) => theme.colors.textInBackground};
-  }
-
-  form {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-  }
-
-  span {
-    color: ${({ theme }) => theme.colors.text};
   }
 
   section {
@@ -87,16 +42,6 @@ export const Content = styled.div`
     -webkit-backdrop-filter: blur(4px);
     text-align: center;
   }
-`;
-
-export const LightSwitch = styled(MdBrightnessHigh)`
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.switch};
-`;
-
-export const DarkSwitch = styled(MdBrightnessLow)`
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.switch};
 `;
 
 export const QR = styled(QRCode).attrs((props) => ({
