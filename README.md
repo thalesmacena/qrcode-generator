@@ -71,5 +71,10 @@ The application will run on [localhost:3000](http://localhost:3000/)
 
 ## 🏃 Next Steps
 - [x] add logo to qrcode
-- [ ] add plain text formatter
-- [ ] add pix mode
+- [ ] Remake Layout
+- [ ] add Contact option
+- [ ] add Event option
+- [ ] add Geo Location option
+- [ ] add Whatsapp option
+- [ ] Add Wifi option
+- [ ] add Pix option
